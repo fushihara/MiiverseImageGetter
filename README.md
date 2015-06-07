@@ -1,0 +1,2 @@
+# MiiverseImageGetter
+Miiverseを巡回しイラストを自動保存します
