@@ -1,0 +1,5 @@
+RewriteEngine On
+RewriteRule ^(.+?)/(.+?)/(.+?)/([0-9]+)$ index.php?title=$1&type=$2&date=$3&page=$4 [QSA]
+RewriteRule ^(.+?)/(.+?)/(.+?)/$         index.php?title=$1&type=$2&date=$3&page= [QSA]
+RewriteRule ^(.+?)/(.+?)/$               index.php?title=$1&type=$2&date=&page= [QSA]
+
