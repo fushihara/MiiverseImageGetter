@@ -159,7 +159,7 @@ public class HttpRequestManager {
 		if (!match.find()) {
 		    break;
 		}
-		url = "https://miiverse.nintendo.net" + match.group(1);
+		url = "https://miiverse.nintendo.net" + match.group(1).replaceAll("&amp;","&");
 		FU.SleepNC(1 * 1000);
 	    }
 	}
